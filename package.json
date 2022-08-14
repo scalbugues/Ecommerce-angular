@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@schematics/update": "^0.1102.18",
+    "rxjs": "^7.5.6",
+    "typescript": "^4.7.4"
+  }
+}

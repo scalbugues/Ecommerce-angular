@@ -1,0 +1,64 @@
+
+<style>
+.ingresso {
+
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: brown;
+   
+}
+
+.aba {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+}
+
+.quantidade {
+
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    
+}
+
+.filme {
+    
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+
+}
+
+.butom{
+
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    border-radius: 10px;
+    background: rgb(216, 214, 214);
+    
+}
+   
+</style>
+
+
+<h3 class="ingresso">
+    Selecione seu ingresso:
+</h3>
+
+<p class="aba">
+    <label>Nome:</label><input type="text" name="nome"> 
+</p>
+
+<p class="quantidade">
+    <label>Quantidade:</label><input type="text" name="quantidade"> 
+</p>
+  
+<p class="filme">
+  <label>Selecione o filme:</label>
+    <select> 
+    <option *ngFor="let filme of filmes">{{ filme }}</option>
+ </select>
+</p>
+
+
+<button class="butom" type="button"(click)="Comprar($event)">Comprar</button>
+   
